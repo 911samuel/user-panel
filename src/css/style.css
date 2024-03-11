@@ -1,0 +1,2022 @@
+body,
+html {
+    color: #a9adb8;
+    background-color: #0a101e;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6em;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.st-preloader {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232935;
+}
+
+.st-preloader .st-preloader-in {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 28px;
+    border: 5px solid rgba(169, 173, 184, .3);
+    border-radius: 50%;
+    animation: spin 10s ease-in-out infinite;
+}
+
+.st-preloader .st-preloader-in:after {
+    content: "";
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: #fec544;
+    border-radius: 50%;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    padding: 28px;
+    align-items: center;
+    animation: spin 10s ease-in-out infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 72.9px;
+    height: 74px;
+    margin-right: 17px;
+}
+
+.phone {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+}
+
+.sam {
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 0%;
+}
+
+.samSpecial {
+    color: #fec544;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+a {
+    font-weight: 900;
+    text-decoration: none;
+    color: aliceblue;
+    margin: 0;
+    letter-spacing: 0%;
+    padding: 10px;
+}
+
+.labels {
+    position: relative;
+}
+
+.toast {
+    position: absolute;
+    padding: 5px 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.toast.success {
+    background-color: green;
+    color: white;
+}
+
+.toast.error {
+    background-color: red;
+    color: white;
+}
+
+.nav a:hover {
+    cursor: pointer;
+    color: #45a049;
+}
+
+.gold {
+    color: #fec544;
+}
+
+.myBusiness {
+    display: flex;
+    align-items: center;
+}
+
+.vertical-line {
+    width: 5px;
+    height: 30px;
+    background-color: #fec544;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.contact a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number {
+    font-weight: 900;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.toggle-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    font-size: 24px;
+    width: fit-content;
+    background-color: #fec544;
+    border: none;
+    cursor: pointer;
+}
+
+.close-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.home {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 36px;
+    font-weight: 100;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.hero-text {
+    width: 50%;
+    animation: fadeUp 1s ease-in-out 1s forwards;
+}
+
+.hero-text1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    color: #fec544;
+}
+
+.hero-text2 {
+    font-size: 120px;
+    margin: 24px 0;
+    font-weight: 900;
+    color: #fdfeff;
+    line-height: 1;
+}
+
+.hero-text3 {
+    font-size: 36px;
+    margin-bottom: 41px;
+    font-weight: 300;
+    color: #a9adb8;
+}
+
+.hero-image {
+    width: 50%;
+    animation: fadeInLeft 1s ease-in-out 1s forwards;
+    margin: 0;
+}
+
+.animated-img {
+    width: 100%;
+}
+
+button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 1.5em;
+    font-weight: 500;
+    padding: 12px 1.5em;
+    border-radius: 50px;
+    min-width: 170px;
+    border: none;
+    outline: none;
+    transition: all .4s ease;
+    text-transform: capitalize;
+    cursor: pointer;
+    background-color: #fec544;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #45a049;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    align-items: center;
+    left: auto;
+    top: auto;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    background-color: transparent;
+    color: #000;
+
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+}
+
+.about-me {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 36px;
+    font-weight: 100;
+    margin-top: 50px;
+    margin-left: 83px;
+}
+
+.about-me .title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fec544;
+    position: relative;
+    z-index: 10;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.text::before,
+.text::after {
+    content: "";
+    position: absolute;
+    width: 170px;
+    height: 2px;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.text::before {
+    background-color: #3f4551;
+}
+
+.text::after {
+    background-color: #fec544;
+    width: 70px;
+}
+
+.background-text {
+    top: 0;
+    left: 50%;
+    font-size: 90px;
+    font-weight: 700;
+    color: #151b2980;
+    margin: -17px 0 0;
+    width: 100%;
+}
+
+.about-text {
+    width: 50%;
+
+}
+
+.about-text1 {
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+
+.about-text2 {
+    font-size: 24px;
+    font-weight: 300;
+    color: #fec544;
+    margin-bottom: 18px;
+}
+
+.about-text3 {}
+
+.about-contact {}
+
+.skills {
+    width: 100%;
+    display: flex;
+}
+
+.icons img:nth-child(4),
+.icons img:nth-child(5) {
+    background-color: #fff;
+    padding: 5px;
+}
+
+.skills-acquired {
+    text-align: center;
+    font-size: 27px;
+    font-weight: 400;
+    width: 45%;
+}
+
+.icons {
+    margin: 80px auto;
+}
+
+.icons img {
+    height: 70px;
+    margin-right: 10px;
+}
+
+.skills-acquired p {
+    width: 492px;
+    margin: 80px auto;
+}
+
+.mission {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 36px;
+}
+
+.skills-grading {
+    width: 45%;
+    line-height: 0%;
+    margin: 80px auto;
+}
+
+.bar {
+    border: none;
+    border-top: 5px solid gold;
+    width: auto;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.grading {
+    display: flex;
+    position: relative;
+    justify-content: left;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.percent {
+    position: absolute;
+    right: 0;
+    top: 10%;
+    transform: translateY(-50%);
+}
+
+.work {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    margin: 100px auto;
+}
+
+.work img {
+    width: 350px;
+    height: 284px;
+}
+
+.blogsPage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 100px auto;
+    max-width: 100%;
+}
+
+.blogsPage img {
+    width: 470px;
+    height: 330px;
+    margin: 0 40px;
+    border-radius: 15px;
+}
+
+.blogsPage p {
+    font-size: 20px;
+    margin: 10px 60px;
+}
+
+.comment {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#addComment {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 50px 150px;
+    width: 60%;
+}
+
+.more {
+    margin: 30px auto;
+    display: block;
+}
+
+.read-more {
+    width: fit-content;
+    padding: 10px;
+    font-size: 16px;
+    height: auto;
+    margin: 0 0 60px 60px;
+}
+
+.read-more {
+    width: fit-content;
+    padding: 10px;
+    font-size: 16px;
+    height: auto;
+    margin: 0 0 60px 60px;
+}
+
+.right .blogs {
+    display: flex;
+    justify-content: space-between;
+    margin: 120px 300px;
+}
+
+.right .blogs img {
+    width: 350px;
+    height: 284px;
+}
+
+.right .blogs p {
+    font-size: 20px;
+    width: 350px;
+}
+
+.right .more {
+    margin: 30px auto;
+}
+
+.admin p {
+    display: inline;
+    margin-right: 15px;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.contactP {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin: 140px 40px;
+}
+
+.contactP h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: left;
+    margin: 40 auto;
+}
+
+.contactP input[type="text"],
+.contactP input[type="email"],
+.contactP textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.contactP textarea {
+    resize: vertical;
+}
+
+.contactP button[type="submit"] {
+    width: 65%;
+    padding: 10px;
+    background-color: #fec544;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #45a049;
+}
+
+.contactInfo {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactInfo ul {
+    list-style-type: none;
+    font-size: 20px;
+    padding-left: 40px;
+    padding-top: 46px;
+}
+
+.contactInfo .main {
+    font-size: 46px;
+
+}
+
+.contactInfo .sub {
+    width: 500px;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.adressInfo {
+    font-size: 16px;
+    font-weight: 100;
+    padding: 5px 0;
+    margin-bottom: 20px;
+}
+
+.resume {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0;
+}
+
+.resume .education {
+    width: 45%;
+    margin: auto;
+}
+
+.education h2,
+.experience h2 {
+    font-size: 46px;
+}
+
+.education h3,
+.experience h3 {
+    font-size: 30px;
+    color: #FEC544;
+}
+
+.education h4,
+.experience h4 {
+    font-size: 24px;
+}
+
+.resume .experience {
+    width: 45%;
+    margin: auto;
+}
+
+.experience .support {
+    font-size: 24px;
+    font-weight: 100;
+    margin: 60px auto;
+}
+
+ul li {
+    margin: auto;
+}
+
+.signin {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 36px;
+    font-weight: 100;
+    margin-top: 50px;
+    margin-left: 83px;
+
+}
+
+.signin .welcome {
+    font-size: 46px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.signin input {
+    width: 60%;
+    height: 50px;
+    margin: 20px auto;
+    font-size: 24px;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+
+.signin form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signin label {
+    text-align: right;
+    font-size: 20px;
+    margin: 10px auto;
+    width: 60%;
+}
+
+.signin a {
+    margin-left: 180px;
+}
+
+.signin button {
+    width: 60%;
+    margin: 20px auto;
+}
+
+.signin .or {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    height: 50px;
+    align-items: center;
+    margin: 20px auto;
+    font-size: 24px;
+}
+
+.signin .or img {
+    width: 120px;
+    height: 1px;
+}
+
+.signin .signinWith {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 20px auto;
+}
+
+.signin .signinWith img:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.create {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.create .createAccount a {
+    font-weight: 600;
+    display: inline-block;
+    margin-left: 5px;
+    color: #45a049;
+}
+
+.create .createAccount a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.signin .one {
+    display: flex;
+    width: 60%;
+    margin: 20px auto;
+    justify-content: space-between;
+}
+
+.signin .login {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    font-size: 14px;
+    margin: 20px auto;
+}
+
+.signin .login label {
+    margin-right: 10px;
+}
+
+.signin a {
+    text-decoration: none;
+    color: #45a049;
+}
+
+.signin .login a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.left {
+    width: 20%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 50px;
+}
+
+.left .line {
+    display: flex;
+    flex-direction: row;
+}
+
+.right {
+    position: relative;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 50px;
+}
+
+.left h1 {
+    font-size: 40px;
+}
+
+.left button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 40px;
+    padding: 7px 10px;
+    background-color: #fff;
+}
+
+.left button:hover {
+    cursor: pointer;
+    background-color: #45a049;
+}
+
+.left button a {
+    color: #000;
+    align-content: center;
+}
+
+.left .upperButton {
+    margin-bottom: 80px;
+}
+
+.left .upperButton .gold {
+    background-color: #DAE9FC;
+}
+
+.left .lowerButton button {
+    background-color: #fec544;
+}
+
+
+
+.left .lowerButton button:hover {
+    cursor: pointer;
+    background-color: #45a049;
+}
+
+.vertical {
+    display: inline;
+    border: 1px solid #fff;
+    height: 50vh;
+    margin-right: 46px;
+}
+
+.right .rightIcon {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.right .rightIcon img {
+    width: 50px;
+    height: 50px;
+    margin-right: 16px;
+    align-items: center;
+}
+
+.rightIcon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.rightIcon button.search {
+    background-color: #071e26;
+    border: 1px solid #fff;
+    color: #848889;
+    font-size: 16px;
+    font-weight: 100;
+    width: fit-content;
+    padding: 10px 20px;
+    margin: auto 5px;
+}
+
+.rightIcon button.search img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.rightIcon .notification,
+.rightIcon .vertical-line,
+.rightIcon img {
+    margin-right: 16px;
+}
+
+.right .blogs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.right .blogs img {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.blogsHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.delete button {
+    float: right;
+    font-size: 24;
+}
+
+.blogsTitle {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.right .blogsTitle .titleB {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.right .blogsTitle .viewB {
+    font-size: 24px;
+    font-weight: 600;
+    margin-right: 0;
+}
+
+.right .gd {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto 5px;
+}
+
+.right .circle {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #DAE9FC;
+    color: blue;
+}
+
+.right .circle p {
+    position: relative;
+    text-align: center;
+}
+
+.right .gd .gdText {
+    line-height: 30%;
+    color: #848889;
+}
+
+.right .gd .gdText1 {
+    font-size: 24px;
+}
+
+.right .gd .gdText2 {
+    font-size: 16px;
+}
+
+.right .gd .views {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right .gd .gdButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right .gd .gdButton button {
+    width: fit-content;
+    font-size: 16px;
+}
+
+.right .upload {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    align-items: center;
+}
+
+.right .upload .uploadTitle {
+    display: flex;
+    justify-content: flex-start;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.upload #uploadForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#updateForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.upload .uploadForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    align-items: center;
+    border: 1px solid #384EB7;
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 50px 0;
+}
+
+.uploadForm .uploadText {
+    color: #8c95a4;
+    text-align: center;
+}
+
+.upload .labels {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.upload .labels input {
+    margin-bottom: 20px;
+    width: 60%;
+    height: 50px;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.upload .labels input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+.upload .labels input[type="date"] {
+    color: #fff;
+}
+
+
+.upload .labels textarea {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+
+}
+
+.profile form .comfirm {
+    display: flex;
+    justify-content: flex-start;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.right .profile form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.right .profile input {
+    width: 60%;
+    height: 40px;
+    font-size: 20px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    background-color: transparent;
+    border-radius: 15px;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.profile .one,
+.signin .one {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.profile .one .gap,
+.signin .one .gap {
+    margin-right: 20px;
+}
+
+.profile form .comfirm {
+    display: flex;
+    justify-content: flex-start;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.profile form .comfirm .cancel {
+    background-color: #8c95a4;
+}
+
+.profile form .comfirm .cancel:hover {
+    background-color: #45a049;
+}
+
+.post-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 50px auto;
+    width: 60%;
+}
+
+#post-image {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.post-detail {
+    display: flex;
+    font-size: 18px;
+    margin: auto 140px;
+}
+
+#post-date {
+    color: #848889;
+    margin-left: 30px;
+}
+
+#post-title {
+    font-size: 36px;
+    margin: 20px 140px;
+}
+
+#post-description {
+    margin-top: 20px;
+    margin: 20px 140px;
+}
+
+footer {
+    font-size: 20px;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+@media only screen and (max-width: 1440px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        height: 8vh;
+        padding: 0 4%;
+    }
+
+    nav {
+        height: 8vh;
+        padding: 0 4%;
+    }
+
+    .nav {
+        width: 80%;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        margin-right: 15px;
+    }
+
+    .myDetails,
+    .myDetails2,
+    .signin,
+    .left,
+    .right {
+        width: 80%;
+        margin: 8px auto;
+    }
+
+    .education,
+    .experience {
+        width: 80%;
+        margin: 8px auto;
+    }
+
+    footer {
+        font-size: 16px;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        height: 8vh;
+        padding: 0 3%;
+    }
+
+    nav {
+        height: 8vh;
+        padding: 0 3%;
+    }
+
+    .nav {
+        width: 90%;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .phone {
+        width: 20px;
+        height: 20px;
+    }
+
+    .sam {
+        font-size: 30px;
+    }
+
+    .samSpecial {
+        font-size: 30px;
+    }
+
+    .myDetails,
+    .myDetails2,
+    .signin,
+    .left,
+    .right {
+        width: 100%;
+        margin: 8px auto;
+    }
+
+    .myphoto,
+    .upload .uploadForm,
+    .upload .labels,
+    .upload .labels input,
+    .upload .labels textarea {
+        width: 100%;
+    }
+
+    .close-icon {
+        display: none;
+    }
+
+    .education,
+    .experience {
+        width: 100%;
+        margin: 8px auto;
+    }
+
+    .education h2,
+    .experience h2,
+    .education h3,
+    .experience h3,
+    .education h4,
+    .experience h4 {
+        font-size: 18px;
+    }
+
+    .education h3,
+    .experience h3 {
+        color: #FEC544;
+    }
+
+    .education p,
+    .experience p {
+        font-size: 16px;
+    }
+
+    .icons img {
+        height: 25px;
+        margin-right: 4px;
+    }
+
+    .social {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .social a {
+        padding: 0 4px;
+    }
+
+    .blogs {
+        margin: 10px 0;
+    }
+
+    .blogs img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .blogsTitle {
+        flex-direction: column;
+        margin: 8px 0;
+    }
+
+    .right .blogsTitle .titleB,
+    .right .blogsTitle .viewB {
+        text-align: center;
+        margin: 6px 0;
+    }
+
+    .right .gd,
+    .right .upload {
+        margin: 8px 0;
+    }
+
+    .right .gd .gdText {
+        line-height: 100%;
+    }
+
+    .right .gd .gdButton button {
+        font-size: 14px;
+    }
+
+    .rightIcon .notification,
+    .rightIcon .vertical-line,
+    .rightIcon img {
+        margin-right: 4px;
+    }
+
+    .right .profile input,
+    .upload .labels input,
+    .upload .labels textarea {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 14px;
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .header {
+        flex-direction: column;
+        padding: 0 3%;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .toggle-btn {
+        display: flex;
+    }
+
+    .close-icon {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 1.5em;
+    }
+
+    .element {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav.show-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 5vh;
+        right: 2vh;
+        background-color: #45a049;
+        z-index: 1;
+        margin: 0 auto;
+        align-items: center;
+        font-size: 18px;
+        width: 30%;
+        border: none;
+        cursor: pointer;
+    }
+
+    .vertical-line,
+    .contact {
+        display: block;
+    }
+
+    .hide-element {
+        display: none;
+    }
+
+    .container {
+        padding: 15px 3%;
+    }
+
+    .myDetails,
+    .myDetails2,
+    .myphoto {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .myname {
+        font-size: 80px;
+        margin-bottom: 30px;
+    }
+
+    .social {
+        width: 50%;
+        margin-top: 50px;
+    }
+
+    .social a {
+        padding: 0 5px;
+    }
+
+    .icons img {
+        height: 50px;
+        margin-right: 5px;
+    }
+
+    .signin,
+    .resume,
+    .right {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .blogs {
+        margin: 30px 0;
+    }
+
+    .blogs img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .blogsTitle {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .right .blogsTitle .titleB,
+    .right .blogsTitle .viewB {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .right .gd,
+    .right .upload {
+        margin: 20px 0;
+    }
+
+    .right .gd .gdText {
+        line-height: 100%;
+    }
+
+    .right .gd .gdButton button {
+        font-size: 14px;
+    }
+
+    .right .upload .uploadForm,
+    .upload .labels {
+        width: 80%;
+    }
+
+    .rightIcon .notification,
+    .rightIcon .vertical-line,
+    .rightIcon img {
+        margin-right: 8px;
+    }
+
+    .right .profile input,
+    .upload .labels input,
+    .upload .labels textarea {
+        width: 80%;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    body {
+        font-size: 12px;
+    }
+
+    .header {
+        flex-direction: column;
+        padding: 0 3%;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .toggle-btn {
+        display: flex;
+    }
+
+    .close-icon {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 1.2em;
+    }
+
+    .element {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav.show-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 5vh;
+        right: 2vh;
+        background-color: #45a049;
+        z-index: 1;
+        margin: 0 auto;
+        align-items: center;
+        font-size: 16px;
+        width: 80%;
+        border: none;
+        cursor: pointer;
+    }
+
+    .vertical-line,
+    .contact {
+        display: block;
+    }
+
+    .hide-element {
+        display: none;
+    }
+
+    .container {
+        padding: 10px 3%;
+    }
+
+    .myDetails,
+    .myDetails2,
+    .myphoto {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .myname {
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+
+    .social {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .social a {
+        padding: 0 5px;
+    }
+
+    .icons img {
+        height: 40px;
+        margin-right: 5px;
+    }
+
+    .signin,
+    .resume,
+    .right {
+        width: 100%;
+        margin: 15px auto;
+    }
+
+    .blogs {
+        margin: 20px 0;
+    }
+
+    .blogs img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .blogsTitle {
+        flex-direction: column;
+        margin: 15px 0;
+    }
+
+    .right .blogsTitle .titleB,
+    .right .blogsTitle .viewB {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .right .gd,
+    .right .upload {
+        margin: 15px 0;
+    }
+
+    .right .gd .gdText {
+        line-height: 100%;
+    }
+
+    .right .gd .gdButton button {
+        font-size: 12px;
+    }
+
+    .right .upload .uploadForm,
+    .upload .labels {
+        width: 100%;
+    }
+
+    .rightIcon .notification,
+    .rightIcon .vertical-line,
+    .rightIcon img {
+        margin-right: 5px;
+    }
+
+    .right .profile input,
+    .upload .labels input,
+    .upload .labels textarea {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        font-size: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+        padding: 0 3%;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .toggle-btn {
+        display: flex;
+    }
+
+    .close-icon {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 1em;
+    }
+
+    .element {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav.show-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 5vh;
+        right: 2vh;
+        background-color: #45a049;
+        z-index: 1;
+        margin: 0 auto;
+        align-items: center;
+        font-size: 14px;
+        width: 80%;
+        border: none;
+        cursor: pointer;
+    }
+
+    .vertical-line,
+    .contact {
+        display: block;
+    }
+
+    .hide-element {
+        display: none;
+    }
+
+    .container {
+        padding: 10px 3%;
+    }
+
+    .myDetails,
+    .myDetails2,
+    .myphoto {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .myname {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .social {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .social a {
+        padding: 0 5px;
+    }
+
+    .icons img {
+        height: 30px;
+        margin-right: 5px;
+    }
+
+    .signin,
+    .resume,
+    .right {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .blogs {
+        margin: 15px 0;
+    }
+
+    .blogs img {
+        width: 12px;
+        height: 12px;
+    }
+
+    .blogsTitle {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    .right .blogsTitle .titleB,
+    .right .blogsTitle .viewB {
+        text-align: center;
+        margin: 8px 0;
+    }
+
+    .right .gd,
+    .right .upload {
+        margin: 10px 0;
+    }
+
+    .right .gd .gdText {
+        line-height: 100%;
+    }
+
+    .right .gd .gdButton button {
+        font-size: 10px;
+    }
+
+    .right .upload .uploadForm,
+    .upload .labels {
+        width: 100%;
+    }
+
+    .rightIcon .notification,
+    .rightIcon .vertical-line,
+    .rightIcon img {
+        margin-right: 5px;
+    }
+
+    .right .profile input,
+    .upload .labels input,
+    .upload .labels textarea {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    body {
+        font-size: 9px;
+    }
+
+    .header {
+        flex-direction: column;
+        padding: 0 3%;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .toggle-btn {
+        display: flex;
+    }
+
+    .close-icon {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 0.8em;
+    }
+
+    .element {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav.show-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 5vh;
+        right: 2vh;
+        background-color: #45a049;
+        z-index: 1;
+        margin: 0 auto;
+        align-items: center;
+        font-size: 12px;
+        width: 80%;
+        border: none;
+        cursor: pointer;
+    }
+
+    .vertical-line,
+    .contact {
+        display: block;
+    }
+
+    .hide-element {
+        display: none;
+    }
+
+    .container {
+        padding: 10px 3%;
+    }
+
+    .myDetails,
+    .myDetails2,
+    .myphoto {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .myname {
+        font-size: 45px;
+        margin-bottom: 15px;
+    }
+
+    .social {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .social a {
+        padding: 0 4px;
+    }
+
+    .icons img {
+        height: 25px;
+        margin-right: 4px;
+    }
+
+    .signin,
+    .resume,
+    .right {
+        width: 100%;
+        margin: 8px auto;
+    }
+
+    .blogs {
+        margin: 10px 0;
+    }
+
+    .blogs img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .blogsTitle {
+        flex-direction: column;
+        margin: 8px 0;
+    }
+
+    .right .blogsTitle .titleB,
+    .right .blogsTitle .viewB {
+        text-align: center;
+        margin: 6px 0;
+    }
+
+    .right .gd,
+    .right .upload {
+        margin: 8px 0;
+    }
+
+    .right .gd .gdText {
+        line-height: 100%;
+    }
+
+    .right .gd .gdButton button {
+        font-size: 9px;
+    }
+
+    .right .upload .uploadForm,
+    .upload .labels {
+        width: 100%;
+    }
+
+    .rightIcon .notification,
+    .rightIcon .vertical-line,
+    .rightIcon img {
+        margin-right: 4px;
+    }
+
+    .right .profile input,
+    .upload .labels input,
+    .upload .labels textarea {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 9px;
+    }
+}
